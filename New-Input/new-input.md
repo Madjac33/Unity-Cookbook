@@ -7,6 +7,9 @@
 ## The Player Input Component
 <p>The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts.</p>
 
+## C# Scripts
+<p></p>
+
 ## Resources
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
 [How to use Unity's New INPUT System EASILY](https://www.youtube.com/watch?v=HmXU4dZbaMw)
