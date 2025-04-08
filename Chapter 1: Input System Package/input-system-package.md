@@ -10,7 +10,9 @@
 <p>The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts.</p>
 
 ## C# Scripts
-<p>Ensure that the proper library is linked: `using UnityEngine.Input`</p>
+<p>Ensure that the proper library is linked</p>
+
+(`using UnityEngine.Input`)
 
 ## Resources
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
