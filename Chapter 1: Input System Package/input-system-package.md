@@ -10,6 +10,7 @@
 <p>The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
 
 ![InputActions](InputActions.png)
+<p>On the Input Actions Editor, you will see 3 columns. On the leftmost column is the Action Maps. An Action Map is a collection of actions that are related to each other. For example, on this pre-populated Input Actions Editor, you will see 2 Action Maps: One that handles player movement and one that handles UI navigation.</p>
 
 ## C# Scripts
 <p>Ensure that the proper library is linked</p>
