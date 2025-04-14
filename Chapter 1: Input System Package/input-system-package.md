@@ -3,11 +3,11 @@
 
 ## Installation
 <p>Unlike the old Input Manager, you need to install the new Input System package. On your Unity project, navigate to Window > Package Manager > Set Packages to Unity Registry > Search for Input System > <b>NOTE:</b> Installing the Input System package will disable the Input Manager > Install.</p>
-<img src="Installation.gif" alt="Installation" width="75%">
+<img src="Installation.gif" alt="Installation" width="60%">
 
 ## The Player Input Component
 <p>The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
-<img src="InputActions.png" alt="InputAction" width="75%">
+<img src="InputActions.png" alt="InputAction" width="60%">
 <p>On the Input Actions Editor, you will see 3 columns.</p>
 
 1. On the leftmost column is the Action Maps. An Action Map is a collection of actions that are related to each other. For example, in this pre-populated Input Actions Editor, you will see 2 Action Maps: One that handles player movement and one that handles UI navigation.
