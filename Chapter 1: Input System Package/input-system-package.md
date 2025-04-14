@@ -6,6 +6,8 @@
 
 ![Installation](Installation.gif)
 
+<img src="Installation.gif" alt="Installation" width="300" height="200">
+
 ## The Player Input Component
 <p>The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
 
