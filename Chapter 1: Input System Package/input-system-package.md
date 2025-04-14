@@ -13,11 +13,13 @@
 <p>On the Input Actions Editor, you will see 3 columns.</p>
 
 1. On the leftmost column is the Action Maps. An Action Map is a collection of actions that are related to each other. For example, in this pre-populated Input Actions Editor, you will see 2 Action Maps: One that handles player movement and one that handles UI navigation.
-2. On the middle column is the Actions. An Action represents an event (i.e. walk, run, jump, attack) that can be triggered by an input. Here, you can change the input (i.e. button, key, joystick) that is binded to an Action. The bindings of an Action depends on the type of input device used. For example, in the above image, the Fire action is binded both to the left button on a mouse and a tap on a touchscreen. 
+
+2. On the middle column is the Actions. An Action represents an event (i.e. walk, run, jump, attack) that can be triggered by an input. Here, you can change the input (i.e. button, key, joystick) that is binded to an Action. The bindings of an Action depends on the type of input device used. For example, in the above image, the Fire action is binded both to the left button on a mouse and a tap on a touchscreen.
+
 3. On the rightmost column is the Action Properties. In this panel, there are 3 sections.
-* Action: 
-* Interactions:
-* Processors: 
+    * Action: 
+    * Interactions:
+    * Processors: 
 
 ## C# Scripts
 <p>Ensure that the proper library is linked</p>
