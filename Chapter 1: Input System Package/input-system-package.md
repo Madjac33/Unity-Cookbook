@@ -21,11 +21,13 @@
             * A Button is used for discrete input. For example, the player has to press 'E' to interact with an object. 
             * A PassThrough is used to trigger a callback whenever a value is changed. This is useful when you want to process input from multiple devices without identifying a primary input device. 
         * The Control Type of an Action refers to the specific source through which the user can provide input. Unity offers a variety of Control Types included touch, integer, Vector2, Vector3, DPad, and more.
+        
     * Interactions: An Interaction defines a specific input pattern for an Action. There are 4 types of Interactions.
         * Hold: The control must be held for a certain amount of time in order to trigger the Action
         * Press: The Action is triggered when the control is pressed and released within a specified amount of time
         * Slow Tap: The control must be held for a certain amount of time in order to trigger the Action (for touch input devices)
         * Tap: The Action is triggered as soon as the control is pressed and released within a specified amount of time (for touch input devices)
+
     * Processors: A Processor receives an input value and returns a modified result. There are 4 types of Processors.
         * Invert Vector 2: The received Vector2 input's X and/or Y values will be multiplied by -1
         * Normalize Vector 2: The received Vector2 input will be modified to have a magnitude of 1
