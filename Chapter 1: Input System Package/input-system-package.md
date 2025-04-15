@@ -34,13 +34,37 @@
 
 
 ## Tutorial
-<p>I am following along with BMo's introduction to Unity's Input System package on YouTube. If you want to head straight there, scroll down and click the link to the video titled "How to use Unity's New INPUT System EASILY. First, create a script to handle player movement. 
+<p>I am following along with BMo's introduction to Unity's Input System package on YouTube. If you want to head straight there, scroll down and click the link to the video titled "How to use Unity's New INPUT System EASILY". 
 
-We will call it "Movement". Then, attach the script to the game object that represents the player. </p>
-<!-- <p>First, ensure that the proper library is linked</p>
+First, create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. Here, I have a simple scene with a cube representing the floor and a cylinder representing the player. 
 
-`using UnityEngine.InputSystem`
-<p>You can create an Input Action within a script by creating </p> -->
+Prerequisites: Attach a Rigidbody to the player and create a variable to represent the player's movement speed.
+<img src="Scene.png" alt="SampleScene" width="60%">
+In the "Movement" script, make sure you have the proper library linked.</p>
+
+`using UnityEngine.InputSystem;`
+<p>Then, create an InputAction object.</p>
+
+`public InputAction playerControls;`
+<p>Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
+<img src="PlayerControls.png" alt="PlayerControls" width="60%">
+For each direction, look up and select the desired key.
+<img src="Binding.png" alt="Binding" width="60%">
+In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.</p>
+
+`Vector2 moveDirection = Vector2.zero;`
+<p>The Input System package requires that the InputAction be enabled and disabled using the OnEnable and OnDisable functions. Include the following in your script: </p>
+
+```
+private void OnEnable() {
+    playerControls.Enable();
+}
+
+private void OnDisable() {
+    playerControls.Disable();
+}
+```
+
 
 ## Resources
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
