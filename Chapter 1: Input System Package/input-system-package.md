@@ -48,8 +48,10 @@ In the "Movement" script, make sure you have the proper library linked.</p>
 `public InputAction playerControls;`
 <p>Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
 <img src="PlayerControls.png" alt="PlayerControls" width="60%">
+
 For each direction, look up and select the desired key.
 <img src="Binding.png" alt="Binding" width="60%">
+
 In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.</p>
 
 `Vector2 moveDirection = Vector2.zero;`
