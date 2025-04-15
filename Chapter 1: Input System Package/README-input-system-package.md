@@ -79,8 +79,9 @@ Go back to the Movement script in the editor and press the plus sign next to Pla
 Add another Up/Down/Left/Right Composite control. We want to allow the player to move using a controller. For each direction, select Left Stick/Direction [GamePad]. You can now move the player with the left joystick on your controller! Your Player Controls variable should look like this.
 <br><img src="Images/FullPlayerControls.png" alt="FullPlayerControls" width="60%"></p>
 
-[Completed Movement Script](Movement.cs)
-
 ## Resources
+[Completed Movement Script](Movement.cs)
+<br>
+
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
 [How to use Unity's New INPUT System EASILY](https://www.youtube.com/watch?v=HmXU4dZbaMw)
