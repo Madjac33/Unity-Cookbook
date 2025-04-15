@@ -6,7 +6,7 @@
 <img src="Installation.gif" alt="Installation" width="60%">
 
 ## The Player Input Component
-<p><b>NOTE:</b> You do not need to follow along with this section in order to complete the example project. This is for your information only. The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
+<p><b>NOTE:</b> You do not need to follow along with this section in order to complete the example project. The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
 <img src="InputActions.png" alt="InputAction" width="60%">
 <p>On the Input Actions Editor, you will see 3 columns.</p>
 
@@ -33,10 +33,14 @@
         * Stick Deadzone: Unwanted Vector2 input will be filtered out according to a designated threshold
 
 
-## C# Scripts
-<p>Ensure that the proper library is linked</p>
+## Tutorial
+<p>I am following along with BMo's introduction to Unity's Input System package on YouTube. If you want to head straight there, scroll down and click the link to the video titled "How to use Unity's New INPUT System EASILY. First, create a script to handle player movement. 
 
-`using UnityEngine.Input`
+We will call it "Movement". Then, attach the script to the game object that represents the player. </p>
+<!-- <p>First, ensure that the proper library is linked</p>
+
+`using UnityEngine.InputSystem`
+<p>You can create an Input Action within a script by creating </p> -->
 
 ## Resources
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
