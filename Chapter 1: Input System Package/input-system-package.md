@@ -6,7 +6,7 @@
 <img src="Installation.gif" alt="Installation" width="60%">
 
 ## The Player Input Component
-<p>The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
+<p><b>NOTE:</b> You do not need to follow along with this section in order to complete the example project. This is for your information only. The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
 <img src="InputActions.png" alt="InputAction" width="60%">
 <p>On the Input Actions Editor, you will see 3 columns.</p>
 
@@ -21,18 +21,17 @@
             * A Button is used for discrete input. For example, the player has to press 'E' to interact with an object. 
             * A PassThrough is used to trigger a callback whenever a value is changed. This is useful when you want to process input from multiple devices without identifying a primary input device. 
         * The Control Type of an Action refers to the specific source through which the user can provide input. Unity offers a variety of Control Types included touch, integer, Vector2, Vector3, DPad, and more.
-        
     * Interactions: An Interaction defines a specific input pattern for an Action. There are 4 types of Interactions.
         * Hold: The control must be held for a certain amount of time in order to trigger the Action
         * Press: The Action is triggered when the control is pressed and released within a specified amount of time
         * Slow Tap: The control must be held for a certain amount of time in order to trigger the Action (for touch input devices)
         * Tap: The Action is triggered as soon as the control is pressed and released within a specified amount of time (for touch input devices)
-
     * Processors: A Processor receives an input value and returns a modified result. There are 4 types of Processors.
         * Invert Vector 2: The received Vector2 input's X and/or Y values will be multiplied by -1
         * Normalize Vector 2: The received Vector2 input will be modified to have a magnitude of 1
         * Scale Vector 2: The received Vector2 input's components will be multiplied by a specified value
         * Stick Deadzone: Unwanted Vector2 input will be filtered out according to a designated threshold
+
 
 ## C# Scripts
 <p>Ensure that the proper library is linked</p>
