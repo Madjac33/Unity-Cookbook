@@ -3,11 +3,11 @@
 
 ## Installation
 <p>Unlike the old Input Manager, you need to install the Input System package. On your Unity project, navigate to Window > Package Manager > Set Packages to Unity Registry > Search for Input System > <b>NOTE:</b> Installing the Input System package will disable the Input Manager > Install.</p>
-<img src="Installation.gif" alt="Installation" width="60%">
+<img src="Images/Installation.gif" alt="Installation" width="60%">
 
 ## The Player Input Component
 <p><b>NOTE:</b> You do not need to follow along with this section in order to complete the example project. The Player Input component enables flexible input handling. In the editor, you can define actions and map them to methods in C# scripts. Navigate to the player game object > Add Component > Search for Player Input > Select Create Actions. This will create an Input Actions Editor in your project's Assets folder.</p>
-<img src="InputActions.png" alt="InputAction" width="60%">
+<img src="Images/InputActions.png" alt="InputAction" width="60%">
 <p>On the Input Actions Editor, you will see 3 columns.</p>
 
 1. On the leftmost column is the Action Maps. An Action Map is a collection of actions that are related to each other. For example, in this pre-populated Input Actions Editor, you will see 2 Action Maps: One that handles player movement and one that handles UI navigation.
@@ -39,7 +39,7 @@
 First, create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. Here, I have a simple scene with a cube representing the floor and a cylinder representing the player. 
 
 Prerequisites: The tutorial I am following is intended for a 2D project. But if you already started a 3D project, there's no need to scrap it. Remove the 3D collider from your player object. I removed the capsule collider from my player object. Then, add a 2D collider and a 2D Rigidbody. On the Rigidbody, set gravity scale to 0. For all readers, ensure you have a 2D Rigidbody and a float variable to represent the player's movement speed.
-<br><img src="Scene.png" alt="SampleScene" width="60%"><br>
+<br><img src="Images/Scene.png" alt="SampleScene" width="60%"><br>
 In the Movement script, make sure you have the proper library linked.</p>
 
 `using UnityEngine.InputSystem;`
@@ -47,9 +47,9 @@ In the Movement script, make sure you have the proper library linked.</p>
 
 `public InputAction playerControls;`
 <p>Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
-<br><img src="PlayerControls.png" alt="PlayerControls" width="60%"><br>
+<br><img src="Images/PlayerControls.png" alt="PlayerControls" width="60%"><br>
 For each direction, look up and select the desired key.<br>
-<img src="Binding.png" alt="Binding" width="60%"><br>
+<img src="Images/Binding.png" alt="Binding" width="60%"><br>
 In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.</p>
 
 `Vector2 moveDirection = Vector2.zero;`
@@ -77,7 +77,7 @@ What if you wanted to give the player the option of using the arrow keys to move
 Go back to the Movement script in the editor and press the plus sign next to Player Controls. Add another Up/Down/Left/Right Composite control. Follow the same steps you used to bind the WASD keys to the different directions. This time, look up and select the arrow keys to map them to the directions. Great! Now the player can move using the arrow keys.
 
 Add another Up/Down/Left/Right Composite control. We want to allow the player to move using a controller. For each direction, select Left Stick/Direction [GamePad]. You can now move the player with the left joystick on your controller! Your Player Controls variable should look like this.
-<br><img src="FullPlayerControls.png" alt="FullPlayerControls" width="60%"></p>
+<br><img src="Images/FullPlayerControls.png" alt="FullPlayerControls" width="60%"></p>
 
 ## Resources
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
