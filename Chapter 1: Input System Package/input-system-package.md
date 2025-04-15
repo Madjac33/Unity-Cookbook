@@ -38,9 +38,9 @@
 
 First, create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. Here, I have a simple scene with a cube representing the floor and a cylinder representing the player. 
 
-Prerequisites: Attach a Rigidbody to the player and create a variable to represent the player's movement speed.
+Prerequisites: The tutorial I am following is intended for a 2D project. But if you already started a 3D project, there's no need to scrap it. Remove the 3D collider from your player object. I removed the capsule collider from my player object. Then, add a 2D collider and a 2D Rigidbody. On the Rigidbody, set gravity scale to 0. For all readers, ensure you have a 2D Rigidbody and a float variable to represent the player's movement speed.
 <img src="Scene.png" alt="SampleScene" width="60%"><br>
-In the "Movement" script, make sure you have the proper library linked.</p>
+In the Movement script, make sure you have the proper library linked.</p>
 
 `using UnityEngine.InputSystem;`
 <p>Then, create an InputAction object.</p>
@@ -53,7 +53,7 @@ For each direction, look up and select the desired key.<br>
 In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.</p>
 
 `Vector2 moveDirection = Vector2.zero;`
-<p>The Input System package requires that the InputAction be enabled and disabled using the OnEnable and OnDisable functions. Include the following in your script: </p>
+<p>The Input System package requires that the InputAction be enabled and disabled using the OnEnable and OnDisable functions. Include the following in your script.</p>
 
 ```
 private void OnEnable() {
@@ -64,7 +64,20 @@ private void OnDisable() {
     playerControls.Disable();
 }
 ```
+<p>Next, in your Update function, set the value of moveDirection from playerControls.</p>
 
+`moveDirection = playerControls.ReadValue<Vector2>();`
+<p>Finally, in FixedUpdate, calculate the Rigidbody's velocity using moveDirection and speed.</p>
+
+`rb.velocity = new Vector2(moveDirection.x * speed * Time.deltaTime, moveDirection.y * speed * Time.deltaTime);`
+<p>Now, when you navigate to the Editor and press play, you can move your character using the WASD keys! 
+
+What if you wanted to give the player the option of using the arrow keys to move as well? What about a joystick on a controller?
+
+Go back to the Movement script in the editor and press the plus sign next to Player Controls. Add another Up/Down/Left/Right Composite control. Follow the same steps you used to bind the WASD keys to the different directions. This time, look up and select the arrow keys to map them to the directions. Great! Now the player can move using the arrow keys.
+
+Add another Up/Down/Left/Right Composite control. We want to allow the player to move using a controller. For each direction, select Left Stick/Direction [GamePad]. You can now move the player with the left joystick on your controller! Your Player Controls variable should look like this.
+<img src="FullPlayerControls.png" alt="FullPlayerControls" width="60%"></p>
 
 ## Resources
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
