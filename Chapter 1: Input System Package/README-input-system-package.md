@@ -81,7 +81,6 @@ Add another Up/Down/Left/Right Composite control. We want to allow the player to
 
 ## Resources
 [Completed Movement Script](Movement.cs)
-<br>
 
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
 [How to use Unity's New INPUT System EASILY](https://www.youtube.com/watch?v=HmXU4dZbaMw)
