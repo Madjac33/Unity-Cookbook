@@ -39,7 +39,7 @@
 First, create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. Here, I have a simple scene with a cube representing the floor and a cylinder representing the player. 
 
 Prerequisites: Attach a Rigidbody to the player and create a variable to represent the player's movement speed.
-<img src="Scene.png" alt="SampleScene" width="60%">
+<img src="Scene.png" alt="SampleScene" width="60%"><br>
 In the "Movement" script, make sure you have the proper library linked.</p>
 
 `using UnityEngine.InputSystem;`
@@ -47,11 +47,9 @@ In the "Movement" script, make sure you have the proper library linked.</p>
 
 `public InputAction playerControls;`
 <p>Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
-<img src="PlayerControls.png" alt="PlayerControls" width="60%">
-
+<img src="PlayerControls.png" alt="PlayerControls" width="60%"><br>
 For each direction, look up and select the desired key.
-<img src="Binding.png" alt="Binding" width="60%">
-
+<img src="Binding.png" alt="Binding" width="60%"><br>
 In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.</p>
 
 `Vector2 moveDirection = Vector2.zero;`
