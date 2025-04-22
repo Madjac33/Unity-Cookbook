@@ -34,13 +34,11 @@
 
 
 ## Tutorial
-<p>I am following along with BMo's introduction to Unity's Input System package on YouTube. If you want to head straight there, scroll down and click the link to the video titled "How to use Unity's New INPUT System EASILY". 
+<p>I am following along with BMo's introduction to Unity's Input System package on YouTube found here (<https://www.youtube.com/watch?v=HmXU4dZbaMw>). 
 
-First, create a new 2D Unity project. Add a game object to represent the player. 2D Object > Sprites > Square. Add a Rigidbody 2D to the player object. Make sure that gravity scale is set to 0. Add a box collider 2D to the player object.
+First, create a new 2D Unity project. Add a game object to represent the player. 2D Object > Sprites > Square. Add a 2D Rigidbody to the player object. Make sure that gravity scale is set to 0. Add a box collider to the player object.
 
-Create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. Here, I have a simple scene with a cube representing the floor and a cylinder representing the player. 
-<br><img src="Images/Scene.png" alt="SampleScene" width="60%"><br>
-In the Movement script, make sure you have the proper library linked.</p>
+Create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. In the Movement script, make sure you have the proper library linked.</p>
 
 `using UnityEngine.InputSystem;`
 <p>Then, create an InputAction object.</p>
