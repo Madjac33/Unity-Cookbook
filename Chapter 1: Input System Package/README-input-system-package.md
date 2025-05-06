@@ -34,24 +34,26 @@
 
 
 ## Tutorial
-<p>I am following along with BMo's introduction to Unity's Input System package on YouTube found here (<https://www.youtube.com/watch?v=HmXU4dZbaMw>). 
+I am following along with BMo's introduction to Unity's Input System package on YouTube found here (<https://www.youtube.com/watch?v=HmXU4dZbaMw>).
 
-First, create a new 2D Unity project. Add a game object to represent the player. 2D Object > Sprites > Square. Add a 2D Rigidbody to the player object. Make sure that gravity scale is set to 0. Add a box collider to the player object.
-
-Create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. In the Movement script, make sure you have the proper library linked.</p>
+1. Create a new 2D Unity project. 
+2. Add a game object to represent the player. 2D Object > Sprites > Square. 
+3. Add a 2D Rigidbody to the player object. Make sure that gravity scale is set to 0. Add a box collider to the player object.
+4. Create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. In the Movement script, make sure you have the proper library linked.</p>
 
 `using UnityEngine.InputSystem;`
-<p>Then, create an InputAction object.</p>
-
+5. Create an InputAction object.
 `public InputAction playerControls;`
-<p>Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
+6. Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
 <br><img src="Images/PlayerControls.png" alt="PlayerControls" width="60%"><br>
-For each direction, look up and select the desired key.<br>
+
+7. For each direction, look up and select the desired key.<br>
 <img src="Images/Binding.png" alt="Binding" width="60%"><br>
-In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.</p>
+
+8. In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.
 
 `Vector2 moveDirection = Vector2.zero;`
-<p>The Input System package requires that the InputAction be enabled and disabled using the OnEnable and OnDisable functions. Include the following in your script.</p>
+9. The Input System package requires that the InputAction be enabled and disabled using the OnEnable and OnDisable functions. Include the following in your script.
 
 ```
 private void OnEnable() {
@@ -62,20 +64,19 @@ private void OnDisable() {
     playerControls.Disable();
 }
 ```
-<p>Next, in your Update function, set the value of moveDirection from playerControls.</p>
+10. Next, in your Update function, set the value of moveDirection from playerControls.
 
 `moveDirection = playerControls.ReadValue<Vector2>();`
-<p>Finally, in FixedUpdate, calculate the Rigidbody's velocity using moveDirection and speed.</p>
+11. Finally, in FixedUpdate, calculate the Rigidbody's velocity using moveDirection and speed.
 
 `rb.velocity = new Vector2(moveDirection.x * speed * Time.deltaTime, moveDirection.y * speed * Time.deltaTime);`
-<p>Now, when you navigate to the Editor and press play, you can move your character using the WASD keys! 
+12. Now, when you navigate to the Editor and press play, you can move your character using the WASD keys! 
 
 What if you wanted to give the player the option of using the arrow keys to move as well? What about a joystick on a controller?
 
-Go back to the Movement script in the editor and press the plus sign next to Player Controls. Add another Up/Down/Left/Right Composite control. Follow the same steps you used to bind the WASD keys to the different directions. This time, look up and select the arrow keys to map them to the directions. Great! Now the player can move using the arrow keys.
-
-Add another Up/Down/Left/Right Composite control. We want to allow the player to move using a controller. For each direction, select Left Stick/Direction [GamePad]. You can now move the player with the left joystick on your controller! Your Player Controls variable should look like this.
-<br><img src="Images/FullPlayerControls.png" alt="FullPlayerControls" width="60%"></p>
+13. Go back to the Movement script in the editor and press the plus sign next to Player Controls. Add another Up/Down/Left/Right Composite control. Follow the same steps you used to bind the WASD keys to the different directions. This time, look up and select the arrow keys to map them to the directions. Great! Now the player can move using the arrow keys.
+14. Add another Up/Down/Left/Right Composite control. We want to allow the player to move using a controller. For each direction, select Left Stick/Direction [GamePad]. You can now move the player with the left joystick on your controller! Your Player Controls variable should look like this.
+<br><img src="Images/FullPlayerControls.png" alt="FullPlayerControls" width="60%">
 
 ## Resources
 [Completed Movement Script](Movement.cs)<br>
