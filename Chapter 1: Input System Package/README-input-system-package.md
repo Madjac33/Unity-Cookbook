@@ -42,7 +42,7 @@ I am following along with BMo's introduction to Unity's Input System package on 
 4. Create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. In the Movement script, make sure you have the proper library linked.
 
 `using UnityEngine.InputSystem;`<br>
-5. Create an InputAction object.
+5. Create an InputAction object.<br>
 `public InputAction playerControls;`<br>
 6. Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
 <br><img src="Images/PlayerControls.png" alt="PlayerControls" width="60%"><br>
