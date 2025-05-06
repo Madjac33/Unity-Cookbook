@@ -39,9 +39,8 @@ I am following along with BMo's introduction to Unity's Input System package on 
 1. Create a new 2D Unity project. 
 2. Add a game object to represent the player. 2D Object > Sprites > Square. 
 3. Add a 2D Rigidbody to the player object. Make sure that gravity scale is set to 0. Add a box collider to the player object.
-4. Create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. In the Movement script, make sure you have the proper library linked.
+4. Create a script to handle player movement. We will call it "Movement". Then, attach the script to the game object that represents the player. In the Movement script, make sure you have the proper library linked. `using UnityEngine.InputSystem;`
 
-`using UnityEngine.InputSystem;`<br>
 5. Create an InputAction object.<br>
 `public InputAction playerControls;`<br>
 6. Navigate back to the Editor. Now, you'll notice a new variable called Player Controls. Press the plus sign and select "Add Up/Down/Left/Right Composite". I will call the new set of controls "WASD" to represent keyboard controls.
