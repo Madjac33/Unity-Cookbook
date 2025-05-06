@@ -50,8 +50,8 @@ I am following along with BMo's introduction to Unity's Input System package on 
 <img src="Images/Binding.png" alt="Binding" width="60%"><br>
 
 8. In the Movement script, create a Vector2 variable to represent the movement direction. I will call it moveDirection.
+`Vector2 moveDirection = Vector2.zero;`
 
-`Vector2 moveDirection = Vector2.zero;`<br>
 9. The Input System package requires that the InputAction be enabled and disabled using the OnEnable and OnDisable functions. Include the following in your script.
 
 ```
@@ -64,11 +64,11 @@ private void OnDisable() {
 }
 ```
 10. Next, in your Update function, set the value of moveDirection from playerControls.
+`moveDirection = playerControls.ReadValue<Vector2>();`
 
-`moveDirection = playerControls.ReadValue<Vector2>();`<br>
 11. Finally, in FixedUpdate, calculate the Rigidbody's velocity using moveDirection and speed.
+`rb.velocity = new Vector2(moveDirection.x * speed * Time.deltaTime, moveDirection.y * speed * Time.deltaTime);`
 
-`rb.velocity = new Vector2(moveDirection.x * speed * Time.deltaTime, moveDirection.y * speed * Time.deltaTime);`<br>
 Now, when you navigate to the Editor and press play, you can move your character using the WASD keys! What if you wanted to give the player the option of using the arrow keys to move as well? What about a joystick on a controller?
 
 12. Go back to the Movement script in the editor and press the plus sign next to Player Controls. Add another Up/Down/Left/Right Composite control. Follow the same steps you used to bind the WASD keys to the different directions. This time, look up and select the arrow keys to map them to the directions. Great! Now the player can move using the arrow keys.
