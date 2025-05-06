@@ -75,6 +75,10 @@ Now, when you navigate to the Editor and press play, you can move your character
 13. Add another Up/Down/Left/Right Composite control. We want to allow the player to move using a controller. For each direction, select Left Stick/Direction [GamePad]. You can now move the player with the left joystick on your controller! Your Player Controls variable should look like this.
 <br><img src="Images/FullPlayerControls.png" alt="FullPlayerControls" width="60%">
 
+## Common Mistakes
+* Starting in a 3D Project
+    * This specific tutorial cannot be directly applied to a 3D game without making some tweaks. But if you already built a 3D project, you don't need to scrap it! Take the 3D shape that represents your player. Remove its box collider. Add a 2D box collider instead. Then, add a 2D Rigidbody. 
+
 ## Resources
 [Completed Movement Script](Movement.cs)<br>
 [Quickstart Guide](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/QuickStartGuide.html)<br>
