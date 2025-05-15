@@ -12,13 +12,16 @@ Below are some features and scenarios that would benefit from the use of Scripta
 * Crafting recipes
 * Card games
 
-
-
-## Creation
-Navigate to your Assets folder > Create > Scripting > ScriptableObject Script
-
 ## Tutorial
-
+### Creating the ScriptableObject
+1. Create a C# script in your Assets folder. For this tutorial, I will name the script "Vehicle". 
+2. Edit the script so it inherits from the ScriptableObject class instead of MonoBehavior.
+`public class Vehicle : ScriptableObject`
+3. Before the class definition, add a CreateAssetMenu attribute. This will allow you to create a new instance of your ScriptableObject from the Assets menu. The fileName attribute 
+```
+[CreateAssetMenu(fileName = "Vehicle", menuName = "New Vehicle")]
+public class Vehicle : ScriptableObject {}
+```
 
 ## Resources
 [ScriptableObject Unity Documentation](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)
