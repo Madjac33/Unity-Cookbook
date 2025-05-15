@@ -2,7 +2,17 @@
 The goal of this chapter is to provide users with use cases for ScriptableObjects. It also aims to familiarize users with their creation and management. At the end of this chapter, users will have built a demo using a ScriptableObject. 
 
 ## Why ScriptableObjects?
-A ScriptableObject is a data container that exists independently from game objects. This means that you can edit its properties without it being tied to a game object in your working scene. You can think of a ScriptableObject as a template. You can use this template to create individual instances that have their own specific objects. For example, consider a Vehicle ScriptableObject. You can make different instances of it that represent specific types of vehicles: Truck, Car, Boat, Plane, etc.  
+A ScriptableObject is a data container that exists independently from game objects. This means that you can edit its properties without it being tied to a game object in your working scene. You can think of a ScriptableObject as a template. You can use this template to create individual instances that have their own specific objects. For example, consider a Vehicle ScriptableObject. You can make different instances of it that represent specific types of vehicles: Truck, Car, Boat, Plane, etc. This is useful for large projects or if you have plans to expand your game in the future. 
+
+## Potential Use Cases
+Below are some features and scenarios that would benefit from the use of ScriptableObjects. Note that this is not a cumulative list. Rather, it is intended to give readers a solid foundation for using ScriptableObjects in their own projects. Hopefully, it will inspire ideas for new mechanics as well. Credit to @leo23230 for the following ideas: 
+* Inventory systems
+* Weapons systems
+* Character management
+* Crafting recipes
+* Card games
+
+
 
 ## Creation
 Navigate to your Assets folder > Create > Scripting > ScriptableObject Script
