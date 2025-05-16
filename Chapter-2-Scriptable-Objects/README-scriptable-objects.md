@@ -61,5 +61,7 @@ Below are some features and scenarios that would benefit from the use of Scripta
 17. Repeat steps 15 and 16 to make any vehicle you want. Have fun!
 
 ## Resources
-[ScriptableObject Unity Documentation](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)
+[Completed Vehicle ScriptableObject](Vehicle.cs)
+[Completed VehicleManager Script](VehicleManager.cs)
+[ScriptableObject Unity Documentation](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)<br>
 [Better Data with Scriptable Objects in Unity! (Tutorial)](https://www.youtube.com/watch?v=PVOVIxNxxeQ)
