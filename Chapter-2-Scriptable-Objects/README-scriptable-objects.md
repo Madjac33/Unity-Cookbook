@@ -25,9 +25,9 @@ Below are some features and scenarios that would benefit from the use of Scripta
 ### Creating MetaData for the Vehicle ScriptableObject
 4. For this tutorial, we want to store information about each vehicle's speed, name, and color. On the Vehicle ScriptableObject, create 3 variables to represent these attributes. 
     ```
-    [SerializeField] int speed;
-    [SerializeField] string vehicleName;
-    [SerializeField] Color color;
+    [SerializeField] public int speed;
+    [SerializeField] public string vehicleName;
+    [SerializeField] public Color color;
     ```
 ### Creating Individual Vehicles
 5. Create an instance of the Vehicle ScriptableObject. Navigate to Assets > Create > New Vehicle. We will call this asset "Car".
